@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Cucumber" time="17.013" tests="1" skipped="0" failures="1" errors="0">
+<testcase classname="To test Waterproofing functionality" name="To test Free Site Visit booking functionality for invalid credentials - Example #1.1" time="16.853">
+<failure type="java.lang.AssertionError" message="expected [] but found [Email is invalid]">
+<![CDATA[java.lang.AssertionError: expected [] but found [Email is invalid]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:656)
+	at org.testng.Assert.assertEquals(Assert.java:666)
+	at Step_Definition.WaterProofingSteps.it_give_an_error_message(WaterProofingSteps.java:102)
+	at ✽.it give an error message(file:///C:/Users/DIYCHAKR/eclipse-workspace/Asianpaints/src/test/resource/Features/WaterProofing.feature:24)
+]]>
+</failure>
+<system-out><![CDATA[
+Given User is on homepage of Asian Paints...................................passed
+When Click on Waterproofing1................................................passed
+And user scroll downward1...................................................passed
+And user enters details of form "Diya", "8900030278", "400708" and "diya13june".passed
+And Click on Book Free Site Visit1..........................................passed
+Then it give an error message...............................................failed
+]]></system-out>
+</testcase>
+</testsuite>
